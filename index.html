@@ -1,0 +1,590 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta
+			name="description"
+			content="Reef: a seafood restaurant serving the day's catch, raw bar favorites and slow-cooked classics by the water."
+		/>
+		<meta property="og:title" content="Reef" />
+		<meta
+			property="og:description"
+			content="Fresh seafood, cooked simply and served by the water."
+		/>
+		<meta property="og:type" content="website" />
+		<meta property="og:image" content="./public/img/opengraph.png" />
+		<link rel="icon" href="./favicon.ico" sizes="any" />
+		<link
+			rel="apple-touch-icon"
+			sizes="180x180"
+			href="./public/img/apple-touch-icon.png"
+		/>
+		<link rel="stylesheet" href="./public/css/index.css" />
+		<title>Reef</title>
+	</head>
+	<body>
+		<header class="nav" id="nav">
+			<div class="nav-container">
+				<a href="./" class="nav-logo">
+					<img src="./public/icons/fish-simple-bold-coral.svg" alt="" />
+					Reef
+				</a>
+				<button
+					type="button"
+					class="nav-toggle"
+					id="navToggle"
+					aria-label="Open menu"
+					aria-expanded="false"
+					aria-controls="navMenu"
+				>
+					<span class="bar bar-top"></span>
+					<span class="bar bar-middle"></span>
+					<span class="bar bar-bottom"></span>
+				</button>
+				<nav aria-label="Primary" class="nav-menu" id="navMenu">
+					<ul class="nav-links">
+						<li><a href="#about" class="nav-link">Our story</a></li>
+						<li><a href="#menu" class="nav-link">Menu</a></li>
+						<li><a href="#specials" class="nav-link">Specials</a></li>
+						<li><a href="#gallery" class="nav-link">Gallery</a></li>
+						<li><a href="#reviews" class="nav-link">Reviews</a></li>
+					</ul>
+					<a class="bttn pill nav-cta" href="#reserve">Reserve a table</a>
+				</nav>
+			</div>
+		</header>
+
+		<main id="main">
+			<header id="hero" class="hero">
+				<img
+					src="https://picsum.photos/seed/reef-hero/1920/1080"
+					alt="Seafood platter on a table by the water"
+					class="hero-bg"
+				/>
+				<div class="hero-content">
+					<span class="eyebrow">Seafood by the water</span>
+					<h1 class="hero-title">Fresh from<br />the reef</h1>
+					<p class="hero-text">
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
+						eiusmod tempor incididunt ut labore et dolore magna aliqua.
+					</p>
+					<div class="bttns">
+						<a href="#reserve" class="bttn pill">Reserve a table</a>
+						<a href="#menu" class="bttn ghost">See the menu</a>
+					</div>
+				</div>
+			</header>
+
+			<section id="about" class="section">
+				<div class="container bi-grid">
+					<div class="about-media reveal">
+						<img
+							src="https://picsum.photos/seed/reef-about/800/900"
+							alt="Chef plating a fresh fish dish"
+							class="about-image"
+						/>
+					</div>
+					<div class="about-copy reveal">
+						<span class="eyebrow">Our story</span>
+						<h2 class="section-title">
+							The sea on your plate, nothing in between
+						</h2>
+						<p class="about-text">
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
+							eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+							enim ad minim veniam, quis nostrud exercitation ullamco.
+						</p>
+						<ul class="i-list">
+							<li>
+								<img src="./public/icons/list-tick.svg" alt="" />
+								<span>Caught daily by local fishing boats</span>
+							</li>
+							<li>
+								<img src="./public/icons/list-tick.svg" alt="" />
+								<span>Seasonal menu that changes with the tide</span>
+							</li>
+							<li>
+								<img src="./public/icons/list-tick.svg" alt="" />
+								<span>Sustainable sourcing on every plate</span>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</section>
+
+			<section id="menu" class="section section-alt">
+				<div class="container">
+					<div class="section-header reveal">
+						<span class="eyebrow">The menu</span>
+						<h2 class="section-title">Cooked simply, served fresh</h2>
+					</div>
+
+					<div class="tabs reveal">
+						<div class="tabs-buttons" role="tablist">
+							<button
+								type="button"
+								class="tab-button active"
+								role="tab"
+								aria-selected="true"
+								data-toggles="tab-starters"
+							>
+								Starters
+							</button>
+							<button
+								type="button"
+								class="tab-button"
+								role="tab"
+								aria-selected="false"
+								data-toggles="tab-mains"
+							>
+								Mains
+							</button>
+							<button
+								type="button"
+								class="tab-button"
+								role="tab"
+								aria-selected="false"
+								data-toggles="tab-desserts"
+							>
+								Desserts
+							</button>
+							<button
+								type="button"
+								class="tab-button"
+								role="tab"
+								aria-selected="false"
+								data-toggles="tab-drinks"
+							>
+								Drinks
+							</button>
+						</div>
+
+						<div class="tab-showcase">
+							<ul
+								id="tab-starters"
+								class="tab dish-list"
+								data-active="true"
+								role="tabpanel"
+							>
+								<li class="dish">
+									<div class="dish-head">
+										<h3>Oysters on ice</h3>
+										<span class="dish-price">$18</span>
+									</div>
+									<p>Half dozen, lemon, shallot mignonette.</p>
+								</li>
+								<li class="dish">
+									<div class="dish-head">
+										<h3>Tuna crudo</h3>
+										<span class="dish-price">$16</span>
+									</div>
+									<p>Citrus, chili oil, toasted sesame.</p>
+								</li>
+								<li class="dish">
+									<div class="dish-head">
+										<h3>Clam chowder</h3>
+										<span class="dish-price">$12</span>
+									</div>
+									<p>Smoked bacon, potato, fresh thyme.</p>
+								</li>
+								<li class="dish">
+									<div class="dish-head">
+										<h3>Crispy calamari</h3>
+										<span class="dish-price">$14</span>
+									</div>
+									<p>Charred lemon, garlic aioli.</p>
+								</li>
+							</ul>
+							<ul id="tab-mains" class="tab dish-list" role="tabpanel">
+								<li class="dish">
+									<div class="dish-head">
+										<h3>Grilled sea bass</h3>
+										<span class="dish-price">$32</span>
+									</div>
+									<p>Roasted fennel, salsa verde, new potatoes.</p>
+								</li>
+								<li class="dish">
+									<div class="dish-head">
+										<h3>Lobster linguine</h3>
+										<span class="dish-price">$38</span>
+									</div>
+									<p>Cherry tomato, white wine, basil.</p>
+								</li>
+								<li class="dish">
+									<div class="dish-head">
+										<h3>Seafood paella</h3>
+										<span class="dish-price">$34</span>
+									</div>
+									<p>Prawns, mussels, saffron rice, for one.</p>
+								</li>
+								<li class="dish">
+									<div class="dish-head">
+										<h3>Catch of the day</h3>
+										<span class="dish-price">Market</span>
+									</div>
+									<p>Ask your server for today's fish and preparation.</p>
+								</li>
+							</ul>
+							<ul id="tab-desserts" class="tab dish-list" role="tabpanel">
+								<li class="dish">
+									<div class="dish-head">
+										<h3>Key lime pie</h3>
+										<span class="dish-price">$10</span>
+									</div>
+									<p>Graham crust, whipped cream.</p>
+								</li>
+								<li class="dish">
+									<div class="dish-head">
+										<h3>Coconut panna cotta</h3>
+										<span class="dish-price">$9</span>
+									</div>
+									<p>Passion fruit, toasted coconut.</p>
+								</li>
+								<li class="dish">
+									<div class="dish-head">
+										<h3>Dark chocolate tart</h3>
+										<span class="dish-price">$11</span>
+									</div>
+									<p>Sea salt, olive oil.</p>
+								</li>
+							</ul>
+							<ul id="tab-drinks" class="tab dish-list" role="tabpanel">
+								<li class="dish">
+									<div class="dish-head">
+										<h3>Reef spritz</h3>
+										<span class="dish-price">$13</span>
+									</div>
+									<p>Sparkling wine, citrus, sea salt rim.</p>
+								</li>
+								<li class="dish">
+									<div class="dish-head">
+										<h3>Tidal gin and tonic</h3>
+										<span class="dish-price">$12</span>
+									</div>
+									<p>Coastal gin, cucumber, sea herbs.</p>
+								</li>
+								<li class="dish">
+									<div class="dish-head">
+										<h3>House white wine</h3>
+										<span class="dish-price">$9</span>
+									</div>
+									<p>Crisp, mineral, served by the glass.</p>
+								</li>
+								<li class="dish">
+									<div class="dish-head">
+										<h3>Sparkling lemonade</h3>
+										<span class="dish-price">$6</span>
+									</div>
+									<p>Fresh lemon, mint, no added sugar.</p>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section id="specials" class="section">
+				<div class="container">
+					<div class="section-header reveal">
+						<span class="eyebrow">Chef's specials</span>
+						<h2 class="section-title">Plates worth the trip</h2>
+					</div>
+
+					<div class="tri-grid">
+						<article class="card reveal">
+							<img
+								src="https://picsum.photos/seed/reef-special-1/700/500"
+								alt="Grilled octopus"
+								class="card-image"
+							/>
+							<div class="card-body">
+								<img
+									src="./public/icons/flame-bold-coral.svg"
+									alt=""
+									class="card-icon"
+								/>
+								<h3>Charred octopus</h3>
+								<p>
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+									do eiusmod tempor incididunt.
+								</p>
+							</div>
+						</article>
+						<article class="card reveal">
+							<img
+								src="https://picsum.photos/seed/reef-special-2/700/500"
+								alt="Seafood tower"
+								class="card-image"
+							/>
+							<div class="card-body">
+								<img
+									src="./public/icons/fish-simple-bold-coral.svg"
+									alt=""
+									class="card-icon"
+								/>
+								<h3>Raw bar tower</h3>
+								<p>
+									Ut enim ad minim veniam, quis nostrud exercitation ullamco
+									laboris nisi ut aliquip.
+								</p>
+							</div>
+						</article>
+						<article class="card reveal">
+							<img
+								src="https://picsum.photos/seed/reef-special-3/700/500"
+								alt="Steamed mussels"
+								class="card-image"
+							/>
+							<div class="card-body">
+								<img
+									src="./public/icons/drop-bold-coral.svg"
+									alt=""
+									class="card-icon"
+								/>
+								<h3>Saffron mussels</h3>
+								<p>
+									Duis aute irure dolor in reprehenderit in voluptate velit esse
+									cillum dolore.
+								</p>
+							</div>
+						</article>
+					</div>
+				</div>
+			</section>
+
+			<section id="gallery" class="section section-alt">
+				<div class="container">
+					<div class="section-header reveal">
+						<span class="eyebrow">Gallery</span>
+						<h2 class="section-title">A table by the water</h2>
+					</div>
+
+					<div class="gallery">
+						<img
+							src="https://picsum.photos/seed/reef-gallery-1/800/800"
+							alt="Dining room at sunset"
+							class="gallery-image gallery-image--wide reveal"
+						/>
+						<img
+							src="https://picsum.photos/seed/reef-gallery-2/600/600"
+							alt="Shrimp skewers"
+							class="gallery-image reveal"
+						/>
+						<img
+							src="https://picsum.photos/seed/reef-gallery-3/600/600"
+							alt="Wine glasses on the terrace"
+							class="gallery-image reveal"
+						/>
+						<img
+							src="https://picsum.photos/seed/reef-gallery-4/600/600"
+							alt="Fresh lobster"
+							class="gallery-image reveal"
+						/>
+						<img
+							src="https://picsum.photos/seed/reef-gallery-5/600/600"
+							alt="Open kitchen"
+							class="gallery-image reveal"
+						/>
+					</div>
+				</div>
+			</section>
+
+			<section id="reviews" class="section">
+				<div class="container">
+					<div class="section-header reveal">
+						<span class="eyebrow">Reviews</span>
+						<h2 class="section-title">What our guests say</h2>
+					</div>
+
+					<div class="tri-grid">
+						<figure class="review reveal">
+							<div class="review-stars" aria-label="5 out of 5 stars">
+								<img src="./public/icons/star-fill-coral.svg" alt="" />
+								<img src="./public/icons/star-fill-coral.svg" alt="" />
+								<img src="./public/icons/star-fill-coral.svg" alt="" />
+								<img src="./public/icons/star-fill-coral.svg" alt="" />
+								<img src="./public/icons/star-fill-coral.svg" alt="" />
+							</div>
+							<blockquote>
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+								eiusmod tempor incididunt ut labore.
+							</blockquote>
+							<figcaption>Ana Whitfield</figcaption>
+						</figure>
+						<figure class="review reveal">
+							<div class="review-stars" aria-label="5 out of 5 stars">
+								<img src="./public/icons/star-fill-coral.svg" alt="" />
+								<img src="./public/icons/star-fill-coral.svg" alt="" />
+								<img src="./public/icons/star-fill-coral.svg" alt="" />
+								<img src="./public/icons/star-fill-coral.svg" alt="" />
+								<img src="./public/icons/star-fill-coral.svg" alt="" />
+							</div>
+							<blockquote>
+								Ut enim ad minim veniam, quis nostrud exercitation ullamco
+								laboris nisi ut aliquip ex ea commodo.
+							</blockquote>
+							<figcaption>Marco López</figcaption>
+						</figure>
+						<figure class="review reveal">
+							<div class="review-stars" aria-label="5 out of 5 stars">
+								<img src="./public/icons/star-fill-coral.svg" alt="" />
+								<img src="./public/icons/star-fill-coral.svg" alt="" />
+								<img src="./public/icons/star-fill-coral.svg" alt="" />
+								<img src="./public/icons/star-fill-coral.svg" alt="" />
+								<img src="./public/icons/star-fill-coral.svg" alt="" />
+							</div>
+							<blockquote>
+								Duis aute irure dolor in reprehenderit in voluptate velit esse
+								cillum dolore eu fugiat nulla.
+							</blockquote>
+							<figcaption>Sofía Gómez</figcaption>
+						</figure>
+					</div>
+				</div>
+			</section>
+
+			<section id="reserve" class="reserve">
+				<div class="reserve-split">
+					<div class="reserve-panel">
+						<span class="eyebrow eyebrow--light">Visit us</span>
+						<h2 class="section-title section-title--light">
+							Reserve your table
+						</h2>
+						<ul class="contact-info">
+							<li>
+								<img src="./public/icons/map-pin-bold-cream.svg" alt="" />
+								<span>12 Harbor Walk, Old Marina</span>
+							</li>
+							<li>
+								<img src="./public/icons/phone-bold-cream.svg" alt="" />
+								<a href="tel:+15555550142">+1 555 555 0142</a>
+							</li>
+							<li>
+								<img
+									src="./public/icons/envelope-simple-bold-cream.svg"
+									alt=""
+								/>
+								<a href="mailto:hello@reef.com">hello@reef.com</a>
+							</li>
+						</ul>
+
+						<table class="hours">
+							<thead>
+								<tr>
+									<th>Day</th>
+									<th>Lunch</th>
+									<th>Dinner</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>Tue to Thu</td>
+									<td>12pm to 3pm</td>
+									<td>6pm to 10pm</td>
+								</tr>
+								<tr>
+									<td>Fri to Sat</td>
+									<td>12pm to 3pm</td>
+									<td>6pm to 11pm</td>
+								</tr>
+								<tr>
+									<td>Sunday</td>
+									<td>1pm to 5pm</td>
+									<td>Closed</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+
+					<div class="reserve-form">
+						<div class="form-group">
+							<label for="name">Full name</label>
+							<input type="text" id="name" class="form-control" />
+						</div>
+						<div class="form-group">
+							<label for="email">Email</label>
+							<input type="email" id="email" class="form-control" />
+						</div>
+						<div class="form-row">
+							<div class="form-group">
+								<label for="date">Date</label>
+								<input type="date" id="date" class="form-control" />
+							</div>
+							<div class="form-group">
+								<label for="guests">Guests</label>
+								<select id="guests" class="form-control">
+									<option value="">Select</option>
+									<option value="1">1</option>
+									<option value="2">2</option>
+									<option value="3">3</option>
+									<option value="4">4</option>
+									<option value="5">5</option>
+									<option value="6">6 or more</option>
+								</select>
+							</div>
+						</div>
+						<div class="form-group">
+							<label for="notes">Special requests</label>
+							<textarea id="notes" class="form-control"></textarea>
+						</div>
+						<button type="button" class="bttn pill bttn-full">
+							Request booking
+						</button>
+					</div>
+				</div>
+			</section>
+		</main>
+
+		<footer class="footer">
+			<div class="footer-inner">
+				<div class="footer-top">
+					<div class="footer-brand">
+						<img
+							src="./public/icons/fish-simple-bold-coral.svg"
+							alt=""
+							class="footer-logo"
+						/>
+						<span class="footer-title">Reef</span>
+					</div>
+					<nav class="footer-nav" aria-label="Footer">
+						<a class="footer-link" href="#about">Our story</a>
+						<a class="footer-link" href="#menu">Menu</a>
+						<a class="footer-link" href="#specials">Specials</a>
+						<a class="footer-link" href="#gallery">Gallery</a>
+						<a class="footer-link" href="#reserve">Reserve</a>
+					</nav>
+					<ul class="footer-social">
+						<li>
+							<a href="#" aria-label="Reef on Facebook"
+								><img src="./public/icons/facebook-logo-bold-cream.svg" alt=""
+							/></a>
+						</li>
+						<li>
+							<a href="#" aria-label="Reef on Instagram"
+								><img src="./public/icons/instagram-logo-bold-cream.svg" alt=""
+							/></a>
+						</li>
+						<li>
+							<a href="#" aria-label="Reef on X"
+								><img src="./public/icons/x-logo-bold-cream.svg" alt=""
+							/></a>
+						</li>
+						<li>
+							<a href="#" aria-label="Reef on TikTok"
+								><img src="./public/icons/tiktok-logo-bold-cream.svg" alt=""
+							/></a>
+						</li>
+					</ul>
+				</div>
+				<div class="footer-bottom">
+					<span class="footer-copy"
+						>&copy; 2026 Reef Seafood Restaurant. All rights reserved.</span
+					>
+				</div>
+			</div>
+		</footer>
+
+		<script type="module" src="./public/js/main.js"></script>
+	</body>
+</html>
